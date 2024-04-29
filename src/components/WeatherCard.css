@@ -1,0 +1,98 @@
+.container {
+    margin: auto;
+    max-width: 800px;        
+    display: flex;    
+    flex-direction: column;
+    justify-content: center; 
+}
+
+
+.container > .card {         
+    width: 400px;
+    height: 370px;
+    flex-grow: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;        
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/city.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;        
+}
+
+.container > .card > .header{    
+    background-color: rgba(247, 243, 8, 0.5);
+    border-radius: 10px;
+    padding: 0px 10px;
+    flex-direction: column;   
+    align-items: flex-end;
+}
+
+.container > .card > .header p {
+    font-weight: bold;
+}
+
+.container .header p span {
+    font-weight: normal;
+}
+
+.container > .card > .body-weather{
+    background-color: rgba(247, 124, 8, 0.5);
+    border-radius: 10px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;    
+}
+
+.container > .card  > .body-weather > div:nth-child(1) > p:nth-child(1) {
+    font-size: 1.4em;
+}
+
+.container > .body-weather > div:nth-child(1) > p:nth-child(2) {
+    font-style: italic;
+}
+
+.container > .card > .body-windy{
+    background-color: rgba(32, 8, 247, 0.5);
+    border-radius: 10px;
+    padding: 0px 10px;    
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;    
+    align-items: center;    
+    color: rgb(255, 255, 255);
+}
+
+.container > .card > .footer{
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 10px;
+    padding: 0px 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;    
+    color: rgb(255, 255, 255);
+}
+
+.container > .card > .footer > p:nth-child(1),
+.container > .card > .footer > p:nth-child(2) {
+    font-weight: bold;
+}
+
+.container > .card > .footer > p:nth-child(1) > span,
+.container > .card > .footer > p:nth-child(2) > span {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.container > .info > a {    
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;    
+    padding: 10px 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
