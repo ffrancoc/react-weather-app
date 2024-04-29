@@ -8,13 +8,17 @@ Simple aplicación para mostrar información del clima por medio de una api.
 
 Crear archivo .env en la raiz del proyecto y crear las siguientes variables dentro:
 
-`VITE_WEATHER_URL="https://api.weatherapi.com/v1/current.json"
+VITE_WEATHER_URL="https://api.weatherapi.com/v1/current.json"
+
 VITE_WEATHER_COUNTRY="Guatemala"
-VITE_WEATHER_API_KEY=XXXXXXXXXXXXXXX`
+
+VITE_WEATHER_API_KEY=XXXXXXXXXXXXXXX
+
+#
 
 Modificar el archivo vite-env.d.ts crear el siguiente código:
 
-`interface ImportMetaEnv {
+interface ImportMetaEnv {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;readonly VITE_WEATHER_URL: string
 
@@ -22,8 +26,10 @@ Modificar el archivo vite-env.d.ts crear el siguiente código:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;readonly VITE_WEATHER_API_KEY: number
 
-}`
+}
 
 # Vista Escritorio
+![url](https://github.com/ffrancoc/react-weather-app/blob/main/screenshoots/desktop.png)
 
 # Vista Móvil
+![url](https://github.com/ffrancoc/react-weather-app/blob/main/screenshoots/mobile.jpg)
